@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ===loader */
+.loader-bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    border: 1em solid #0056A8;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* akhir loader */
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+
+}
+
+main {
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+
+/* navbar */
+.navbar {
+    padding-bottom: 0.3rem !important;
+    padding-top: 0.3rem !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: none !important;
+    border-color: #0056A8;
+    font-size: 0.8rem !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.nav-item .nav-link:hover {
+    color: #0056A8 !important;
+}
+
+/* block */
+.jmn {
+    background-color: #0056A8;
+    color: #fff;
+    padding: 5px;
+}
+
+.jmn-text {
+    padding-left: 8px;
+}
+
+.flex-container>div>h2 {
+    font-size: 18px;
+    margin-bottom: 0 !important;
+}
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div>p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.forbi i.bi {
+    color: #fff;
+    font-size: 25px;
+    background: #1b3957;
+    padding: 8px;
+}
+
+/* barnd */
+.swiper-slide {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide>.img-slide {
+    height: 50%;
+    width: 75%;
+    border-width: 4px 4px 4px 4px;
+    border-color: #a5a1a1a5;
+    box-shadow: 20px 20px 20px 10px rgb(0 0 0 / 16%);
+}
+
+.brandac>h1 {
+    font-size: 22px;
+    margin-bottom: 0px !important;
+    font-weight: 700;
+}
+
+.brandac>h1>p {
+    font-size: 10px;
+    margin-bottom: 0 !important;
+}
+
+/* kenapa kami */
+.why>h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why>h2>p {
+    font-size: 12px;
+}
+
+.img-why {
+    padding: 5px;
+    box-shadow: 0 20px 30px 10px rgb(0 0 0 / 16%);
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+    margin-top: -30px;
+}
+
+.col-why>h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col-why>h2>p {
+    font-size: 10px;
+}
+
+/* swiper */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimoni>img {
+    width: 120px;
+    height: 120px;
+    padding-top: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimoni {
+    text-align: center;
+}
+
+.testimoni h3 {
+    color: #0f0f10bd;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20 px;
+}
+
+/*---- # Frequently Asked Questions ----------*/
+.faq .faq-list {
+    padding: 0 0;
+}
+
+.faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.faq .faq-list li+li {
+    margin-top: 15px;
+}
+
+.faq .faq-list li {
+    padding: 15px 5px 15px 10px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 0 2px 0 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.faq .faq-list .icon-help {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    left: 22px;
+    color: #47b2e4;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+    font-size: 18px;
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+    top: 0;
+}
+
+.faq .faq-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+    display: none;
+}
+
+.faq .faq-list a.collapsed {
+    color: #37517e;
+    transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+    color: #47b2e4;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+    display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .faq .faq-list {
+        padding: 0;
+    }
+}
+
+
+/* gallery */
+.col>.gallery {
+    max-width: 100%;
+}
+
+.gallery {
+    padding: 80px 0;
+}
+
+.gallery img {
+    background-color: #0f0f10;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* footer */
+.blit>h2::before {
+    content: "";
+    width: 10 px;
+    height: 1 px;
+    display: inline-block;
+    background: black;
+    margin: 4 px 10 px;
+
+}
+
+.align-items-center>.fw-bold {
+    color: #fff;
+}
+
+.ms-3>.fw-bold {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* ====Backtotop 
+=========================*/
+
+.myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    background: #0056A8;
+    outline: none;
+    cursor: pointer;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+}
+
+.myBtn>span {
+    color: #fff;
+}
+
+/* akhir top */
+/* ==Whatsapp===
+==================================== */
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 12%;
+    right: 4%;
+    z-index: 9999
+}
+
+@media screen and (min-width:900px) {
+    .floating-whatsapp {
+        bottom: 10%
+    }
+}
+
+.floating-whatsapp button.btn.btn-floating-whatsapp {
+    background: #25d366;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    color: #fff;
+    display: -webkit-box !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    float: left
+}
+
+
+.floating-whatsapp button.btn.btn-floating-whatsapp i.fab.fa-whatsapp {
+    font-size: 2.4em
+}
+
+.floating-whatsapp .badge-whatsapp-wrapper {
+    position: absolute;
+    display: inline-block;
+    right: 100%;
+    top: 10%;
+    width: 200px
+}
+
+.floating-whatsapp .badge-whatsapp-wrapper .badge-floating-whatsapp {
+    visibility: hidden;
+    background: #222;
+    color: #fff;
+    float: right;
+    font-size: .8em;
+    padding: 5px 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.floating-whatsapp .badge-whatsapp-wrapper .badge-floating-whatsapp:before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-left-color: #222;
+}
+
+
+
+.floating-whatsapp button.btn.btn-floating-whatsapp:hover~.badge-whatsapp-wrapper .badge-floating-whatsapp {
+    visibility: visible
+}
+
+.sliders {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: -20px
+}
+
+@media screen and (min-width:1200px) {
+    .sliders {
+        padding: 0 15px !important
+    }
+}
+
+@media screen and (max-width:900px) {
+    .sliders {
+        margin-top: -30px
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .sliders #tns1>.tns-item {
+        width: 345px !important
+    }
+
+    .sliders #tns1>.tns-item img {
+        width: 330px !important
+    }
+}
+
+.sliders #slider-navs {
+    position: absolute;
+    z-index: 999;
+    bottom: 20px;
+    left: 50%
+}
+
+
+@media screen and (max-width:786px) {
+    .sliders #slider-navs {
+        bottom: -10px;
+        padding-left: 15px;
+        left: 0
+    }
+}
+
+/* akhir whatsapp */
